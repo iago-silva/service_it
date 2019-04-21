@@ -1,0 +1,8 @@
+Description:
+    Creates a service
+
+Example:
+    rails g service Foo
+
+    This will create:
+        app/services/foo.rb
