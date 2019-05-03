@@ -3,3 +3,8 @@ class SayMyName < ServiceIt::Base
     @name
   end
 end
+
+class MissedCallService < ServiceIt::Base
+end
+
+
