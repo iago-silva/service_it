@@ -26,6 +26,14 @@ You can use Rails generator to create a `Service`
 
     $ rails g service NAME
 
+This will create:
+    
+```
+├── app
+    ├── services
+        └── name.rb
+```
+
 ## Usage
 
 ```ruby
