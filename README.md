@@ -20,7 +20,7 @@ And then execute:
 
     $ bundle
     
-## With Rails
+## Rails Generator
 
 You can use Rails generator to create a `Service`
 
