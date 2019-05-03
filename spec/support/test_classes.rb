@@ -4,5 +4,5 @@ class SayMyName < ServiceIt::Base
   end
 end
 
-class MissedCallService < ServiceIt::Base
+class MissedPerformService < ServiceIt::Base
 end

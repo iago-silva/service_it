@@ -10,10 +10,10 @@ describe ServiceIt do
     end
   end
 
-  context 'when call method is not defined' do
+  context 'when perform method is not defined' do
     it 'raises an NotImplementedError exception' do
       expect do
-        MissedCallService.call
+        MissedPerformService.call
       end.to raise_error(NotImplementedError)
     end
   end
