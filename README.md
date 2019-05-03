@@ -61,7 +61,3 @@ if CompleteTransaction.call(transaction: transaction)
   puts 'Transaction complete!'
 end
 ```    
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/iago-silva/service_it.
