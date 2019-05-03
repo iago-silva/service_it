@@ -6,5 +6,3 @@ end
 
 class MissedCallService < ServiceIt::Base
 end
-
-
