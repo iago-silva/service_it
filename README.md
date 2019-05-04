@@ -2,7 +2,7 @@
 
 # ServiceIt
 
-[Service objects are a holy grail to keep your controllers and models slim and readable](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
+> [Service objects are a holy grail to keep your controllers and models slim and readable](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
 
 <br/>
 
