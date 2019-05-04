@@ -53,21 +53,58 @@ Foo.call(params)
 
 ## Example 
 
-Simple example _using Rails_ to change status of a _transaction_ to complete
+Simple example to release a _POST_
 
-    $ rails g service CompleteTransaction
+* Before
 
 ```ruby
-# app/services/complete_transaction.rb
-class CompleteTransaction < ServiceIt::Base
-  def perform
-    @transaction.update(:status, :complete)
+# app/controllers/post_releases_controller.rb
+class PostReleasesController < ApplicationController
+
+  # [...]
+
+  def update
+    @post.prepare_to_release                      # <--
+    if @post.update(released_at: Date.current)    # <--
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
+
+  # [...]
+
+end
+
+```
+
+* After
+
+```ruby
+# app/controllers/post_releases_controller.rb
+class PostReleasesController < ApplicationController
+
+  # [...]
+
+  def update
+    if ReleasePost.call(post: @post)    # <--
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  # [...]
+
 end
 ```    
 
 ```ruby
-if CompleteTransaction.call(transaction: transaction)
-  puts 'Transaction complete!'
+# app/services/release_post.rb
+class ReleasePost < ServiceIt::Base
+  def perform
+    @post.prepare_to_release
+    @post.update(released_at: Date.current)
+  end
 end
 ```    
