@@ -20,23 +20,33 @@ And then execute:
 
     $ bundle
     
-## With Rails
+## Rails Generator
 
 You can use Rails generator to create a `Service`
 
     $ rails g service NAME
+
+This will create:
+    
+```
+├── app
+    ├── services
+        └── name.rb
+```
 
 ## Usage
 
 ```ruby
 class Foo < ServiceIt::Base
   def perform
-    # here you can use params that became instance variables
+    # put your logic here
+    # you can use params that became instance variables
   end
 end
 ```
 
 Call your service from anywhere
+
 ```ruby
 Foo.call(params)
 ```    
