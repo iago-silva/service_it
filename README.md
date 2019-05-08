@@ -2,7 +2,7 @@
 
 # ServiceIt
 
-> [Service objects are a holy grail to keep your controllers and models slim and readable](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
+> [About Service Objects](https://dev.to/ryanwhocodes/a-beginners-guide-to-service-objects-for-ruby-on-rails-1fo5)
 
 <br/>
 
