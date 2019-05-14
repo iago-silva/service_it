@@ -48,7 +48,7 @@ end
 Call your service from anywhere
 
 ```ruby
-Foo.call(params)
+Foo.call(foo: foo, bar: bar)
 ```    
 
 ## Example 
