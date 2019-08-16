@@ -11,7 +11,7 @@
 ## Installation
 
     $ gem install service_it
-    
+
 ## With Bundler
 
 Add this line to your `Gemfile`:
@@ -21,7 +21,7 @@ Add this line to your `Gemfile`:
 And then execute:
 
     $ bundle
-    
+
 ## Rails Generator
 
 You can use Rails generator to create a `Service`
@@ -29,7 +29,7 @@ You can use Rails generator to create a `Service`
     $ rails g service NAME
 
 This will create:
-    
+
 ```
 ├── app
     ├── services
@@ -42,7 +42,7 @@ This will create:
 class Foo < ServiceIt::Base
   def perform
     # put your logic here
-    # you can use params that became instance variables
+    # you can use params that became variables
   end
 end
 ```
@@ -51,9 +51,9 @@ Call your service from anywhere
 
 ```ruby
 Foo.call(foo: foo, bar: bar)
-```    
+```
 
-## Example 
+## Example
 
 Simple example to release a _POST_
 
@@ -99,14 +99,14 @@ class PostReleasesController < ApplicationController
   # [...]
 
 end
-```    
+```
 
 ```ruby
 # app/services/release_post.rb
 class ReleasePost < ServiceIt::Base
   def perform
-    @post.prepare_to_release
-    @post.update(released_at: Date.current)
+    post.prepare_to_release
+    post.update(released_at: Date.current)
   end
 end
-```    
+```

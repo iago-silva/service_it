@@ -28,6 +28,12 @@ module ServiceIt
 
         args.each do |key, value|
           instance.instance_variable_set("@#{key}", value)
+
+          class_eval do
+            private
+
+            attr_accessor key.to_sym
+          end
         end
 
         instance
