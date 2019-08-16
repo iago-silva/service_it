@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class SayMyName < ServiceIt::Base
   def perform
-    @name
+    name
   end
 end
 
