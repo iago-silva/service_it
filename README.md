@@ -68,9 +68,9 @@ class PostReleasesController < ApplicationController
   def update
     @post.prepare_to_release                      # <--
     if @post.update(released_at: Date.current)    # <--
-      redirect_to root_path
+      # [...]
     else
-      render :edit
+      # [...]
     end
   end
 
@@ -90,9 +90,9 @@ class PostReleasesController < ApplicationController
 
   def update
     if ReleasePost.call(post: @post)    # <--
-      redirect_to root_path
+      # [...]
     else
-      render :edit
+      # [...]
     end
   end
 
