@@ -5,10 +5,10 @@ require 'spec_helper'
 describe ServiceIt do
   describe SayMyName do
     let(:name) { 'Heisenberg' }
-    let(:call) { SayMyName.call(name: 'Heisenberg') }
 
     it 'says Heisenberg' do
-      expect(call).to eq(name)
+      result = SayMyName.call(name: name)
+      expect(result).to eq(name)
     end
   end
 
