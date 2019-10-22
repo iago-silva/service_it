@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 require 'simplecov'
+require 'service_it'
 
 SimpleCov.minimum_coverage 100
 SimpleCov.start do
@@ -6,7 +9,5 @@ SimpleCov.start do
 end
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
-
-require 'service_it'
 
 Dir['./spec/support/**/*.rb'].each { |f| require f }
