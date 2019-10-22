@@ -6,7 +6,6 @@ module ServiceIt
   # Documentation:
   #   https://github.com/iago-silva/service_it
   class Base
-
     def initialize(args)
       args.each { |key, value| set_private_ivar(key, value) }
     end
@@ -36,12 +35,11 @@ module ServiceIt
     def set_private_ivar(key, value)
       instance_variable_set("@#{key}", value)
 
-      self.class_eval do
+      self.class.class_eval do
         private
 
         attr_accessor key.to_sym
       end
     end
-
   end
 end
