@@ -1,6 +1,8 @@
 # ServiceIt
 [![Gem Version](https://badge.fury.io/rb/service_it.svg)](https://badge.fury.io/rb/service_it) [![Build Status](https://travis-ci.org/iago-silva/service_it.svg?branch=master)](https://travis-ci.org/iago-silva/service_it) [![Code Climate](https://codeclimate.com/github/iago-silva/service_it.png)](https://codeclimate.com/github/iago-silva/service_it) [![Test Coverage](https://api.codeclimate.com/v1/badges/fcc8375ebe8fa5412381/test_coverage)](https://codeclimate.com/github/iago-silva/service_it/test_coverage)
 
+Its benefit is to facilitate the creation of Service Objects, providing you the basic and enough to have a complete one and letting you free to use on your own way.
+
 - [ServiceIt](#serviceit)
   - [Installation](#installation)
   - [With Bundler](#with-bundler)
