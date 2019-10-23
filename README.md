@@ -18,7 +18,7 @@ Its benefit is to facilitate the creation of Service Objects, providing you the
 
 Add this line to your `Gemfile`:
 
-    gem 'service_it', '~> 1.1.0'
+    gem 'service_it', '~> 1.2.0'
 
 And then execute:
 
