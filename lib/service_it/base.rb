@@ -6,10 +6,6 @@ module ServiceIt
   # Documentation:
   #   https://github.com/iago-silva/service_it
   class Base
-    def initialize(args)
-      args.each { |key, value| set_private_ivar(key, value) }
-    end
-
     # Call your service
     #
     # Example:
@@ -22,6 +18,10 @@ module ServiceIt
     #   perform's return
     def self.call(**args)
       new(args).perform
+    end
+
+    def initialize(args)
+      args.each { |key, value| set_private_ivar(key, value) }
     end
 
     # Implement this method to run your service
