@@ -38,7 +38,7 @@ module ServiceIt
       self.class.class_eval do
         private
 
-        attr_accessor key.to_sym
+        attr_reader key.to_sym
       end
     end
   end
