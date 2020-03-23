@@ -49,7 +49,7 @@ class Foo < ServiceIt::Base
 end
 ```
 
-Call your service from anywhere
+Call your service from anywhere (controllers, models, migrations, ...)
 
 ```ruby
 Foo.call(foo: foo, bar: bar)
@@ -59,38 +59,13 @@ Foo.call(foo: foo, bar: bar)
 
 Simple example to release a _POST_
 
-* Before
-
 ```ruby
 # app/controllers/post_releases_controller.rb
 class PostReleasesController < ApplicationController
 
   # [...]
 
-  def update
-    @post.prepare_to_release                      # <--
-    if @post.update(released_at: Date.current)    # <--
-      # [...]
-    else
-      # [...]
-    end
-  end
-
-  # [...]
-
-end
-
-```
-
-* After
-
-```ruby
-# app/controllers/post_releases_controller.rb
-class PostReleasesController < ApplicationController
-
-  # [...]
-
-  def update
+  def create
     if ReleasePost.call(post: @post)    # <--
       # [...]
     else
