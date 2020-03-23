@@ -60,22 +60,7 @@ Foo.call(foo: foo, bar: bar)
 Simple example to release a _POST_
 
 ```ruby
-# app/controllers/post_releases_controller.rb
-class PostReleasesController < ApplicationController
-
-  # [...]
-
-  def create
-    if ReleasePost.call(post: @post)    # <--
-      # [...]
-    else
-      # [...]
-    end
-  end
-
-  # [...]
-
-end
+ReleasePost.call(post: @post)
 ```
 
 ```ruby
