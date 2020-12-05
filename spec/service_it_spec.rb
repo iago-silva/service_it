@@ -1,22 +1,7 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe ServiceIt do
-  describe SayMyName do
-    let(:name) { 'Heisenberg' }
-
-    it 'says Heisenberg' do
-      result = SayMyName.call(name: name)
-      expect(result).to eq(name)
-    end
-  end
-
-  context 'when perform method is not defined' do
-    it 'raises an NotImplementedError exception' do
-      expect do
-        MissedPerformService.call
-      end.to raise_error(NotImplementedError)
-    end
+  it 'has a version number' do
+    expect(ServiceIt::VERSION).not_to be nil
   end
 end
