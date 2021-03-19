@@ -57,12 +57,6 @@ Foo.call(foo: foo, bar: bar)
 
 ## Example
 
-Simple example to release a _POST_
-
-```ruby
-ReleasePost.call(post: @post)
-```
-
 ```ruby
 # app/services/release_post.rb
 class ReleasePost < ServiceIt::Base
@@ -71,4 +65,8 @@ class ReleasePost < ServiceIt::Base
     post.update(released_at: Date.current)
   end
 end
+```
+
+```ruby
+ReleasePost.call(post: @post)
 ```
