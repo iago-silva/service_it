@@ -14,7 +14,7 @@ Facilitate the creation of Service Objects, providing the basic and enough to ha
 
     $ gem install service_it
 
-### With Bundler
+## With Bundler
 
 Add this line to your `Gemfile`:
 
