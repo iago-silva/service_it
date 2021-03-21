@@ -14,7 +14,7 @@ Facilitate the creation of Service Objects, providing the basic and enough to ha
 
     $ gem install service_it
 
-## With Bundler
+### With Bundler
 
 Add this line to your `Gemfile`:
 
@@ -49,7 +49,7 @@ class Foo < ServiceIt::Base
 end
 ```
 
-Call your service from anywhere (controllers, models, migrations, ...)
+Call your service from anywhere (controllers, models, migrations...)
 
 ```ruby
 Foo.call(foo: foo, bar: bar)
