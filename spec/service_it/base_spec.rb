@@ -21,7 +21,7 @@ describe ServiceIt::Base do
     end
   end
 
-  describe MissedPerformService do
+  describe MissingPerformService do
     context 'when perform method is not defined' do
       subject { described_class.call }
 
