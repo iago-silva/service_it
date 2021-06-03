@@ -1,7 +1,6 @@
 # ServiceIt
 [![Gem Version](https://badge.fury.io/rb/service_it.svg)](https://badge.fury.io/rb/service_it) 
-[![Build Status](https://travis-ci.org/iago-silva/service_it.svg?branch=master)](https://travis-ci.org/iago-silva/service_it) 
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/iago-silva/service_it)
+[![Build Status](https://travis-ci.org/iago-silva/service_it.svg?branch=master)](https://travis-ci.org/iago-silva/service_it)
 [![Code Climate](https://codeclimate.com/github/iago-silva/service_it.png)](https://codeclimate.com/github/iago-silva/service_it) 
 
 Facilitate the creation of Service Objects, providing the basic and enough to have a complete one and letting you free to use on your own way.
