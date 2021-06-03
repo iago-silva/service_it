@@ -10,10 +10,5 @@ AllCops:
   Exclude:
     - 'lib/generators/rails/templates/**/*'
 
-Style/FrozenStringLiteralComment:
-  Exclude:
-    - 'bin/**/*'
-    - 'Gemfile'
-
 RSpec/NamedSubject:
   Enabled: false

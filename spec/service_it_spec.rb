@@ -3,7 +3,7 @@
 describe ServiceIt do
   let(:version) { '2.0.0' }
 
-  it 'has the correct version number' do
+  it 'has correct version number' do
     expect(ServiceIt::VERSION).to eq(version)
   end
 end
