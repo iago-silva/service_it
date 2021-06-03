@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 describe ServiceIt do
-  it 'has a version number' do
-    expect(ServiceIt::VERSION).not_to be nil
+  let(:version) { '2.0.0' }
+
+  it 'has the correct version number' do
+    expect(ServiceIt::VERSION).to eq(version)
   end
 end
